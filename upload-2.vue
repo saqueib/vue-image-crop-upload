@@ -6,6 +6,7 @@
         </div>
 
         <div class="vicp-step1" v-show="step == 1">
+	    <slot></slot>
             <div class="vicp-drop-area" @dragleave="preventDefault" @dragover="preventDefault" @dragenter="preventDefault" @click="handleClick" @drop="handleChange">
                 <i class="vicp-icon1" v-show="loading != 1">
 					<i class="vicp-icon1-arrow"></i>
